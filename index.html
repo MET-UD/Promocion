@@ -2,12 +2,102 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Promoción - Maestría en Educación en Tecnología</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programas en Educación en Tecnología</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0b0f1a;
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            padding: 30px;
+            background: #05070d;
+        }
+
+        header img {
+            max-width: 250px;
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-weight: 300;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 50px 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #111827;
+            border-radius: 15px;
+            padding: 30px;
+            width: 300px;
+            transition: 0.3s;
+            cursor: pointer;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        }
+
+        .card:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+        }
+
+        .card img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: contain;
+        }
+
+        .card h2 {
+            margin-top: 20px;
+            font-weight: 400;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 14px;
+            color: #aaa;
+        }
+    </style>
 </head>
 <body>
-    <h1>Logotipos de la Promoción</h1>
-    <img src="LOGOTIPO - UD FCE-04.png" alt="Logotipo UD FCE-04">
-    <img src="LOGOTIPO CON- MAESTRIA EN EDUCACIÓN EN TECNOLOGIA VERTICAL.png" alt="Logotipo Maestría en Educación en Tecnología Vertical">
-    <img src="LOGOTIPO-AZUL-VERTICAL.png" alt="Logotipo Azul Vertical">
+
+    <!-- LOGO UNIVERSIDAD -->
+    <header>
+        <img src="LOGOTIPO - UD FCE-04.png" alt="Universidad">
+        <h1>Programas en Educación en Tecnología</h1>
+    </header>
+
+    <!-- TARJETAS -->
+    <div class="container">
+
+        <!-- MAESTRÍA -->
+        <div class="card" onclick="window.location.href='https://TU-LINK-MAESTRIA.com'">
+            <img src="LOGOTIPO CON- MAESTRIA EN EDUCACIÓN EN TECNOLOGIA VERTICAL.png" alt="Maestría">
+            <h2>Maestría en Educación en Tecnología</h2>
+        </div>
+
+        <!-- ESPECIALIZACIÓN -->
+        <div class="card" onclick="window.location.href='https://TU-LINK-ESPECIALIZACION.com'">
+            <img src="LOGOTIPO-AZUL-VERTICAL.png" alt="Especialización">
+            <h2>Especialización en Educación en Tecnología</h2>
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 - Facultad de Ciencias de la Educación
+    </footer>
+
 </body>
 </html>
